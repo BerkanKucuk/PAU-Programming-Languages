@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    long sayi;
+    int sayac=0;
+    cin >> sayi;
+    while(sayi!=1){
+        sayac+=1;
+        if(sayi%2==0)
+            sayi=sayi/2;
+        else if(sayi%2==1)
+            sayi=3*sayi+1;
+    }
+    cout<<sayac;
+    return 0;
+}
