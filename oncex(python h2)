@@ -1,0 +1,16 @@
+xbaslayan = []
+xbaslamayan = []
+
+girdi = input("")
+
+while girdi != "":
+    if girdi.startswith("x"):
+        xbaslayan.append(girdi)
+    else:
+        xbaslamayan.append(girdi)
+    girdi = input("")
+xbaslayan.sort() 
+xbaslamayan.sort()
+
+for kelime in xbaslayan+xbaslamayan:
+    print(kelime)
